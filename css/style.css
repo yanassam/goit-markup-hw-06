@@ -55,13 +55,13 @@ a {
   color: #2e2f42;
 }
 
-.contact-info {}
+.contact-info {
+  font-style: normal;
+}
 
 .contact-list {}
 
-.contact-item {
-  font-style: normal;
-}
+.contact-item {}
 
 .contact-link {
   font-size: 16px;
@@ -91,7 +91,6 @@ a {
 }
 
 .hero-button {
-  padding: 16px 32px;
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
