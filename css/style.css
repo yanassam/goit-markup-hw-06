@@ -59,13 +59,15 @@ a {
 
 .contact-list {}
 
-.contact-item {}
+.contact-item {
+  font-style: normal;
+}
 
 .contact-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  font-style: normal;
+  /* font-style: normal; */
   color: #434455;
 }
 
@@ -89,7 +91,6 @@ a {
 }
 
 .hero-button {
-  border-radius: 4px;
   padding: 16px 32px;
   background: #4d5ae5;
   font-weight: 500;
