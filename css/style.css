@@ -187,9 +187,12 @@ header .container {
   height: 1px;
   margin: -1px;
   padding: 0;
-  overflow: hidden;
   border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .studio-list {
@@ -262,7 +265,7 @@ header .container {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* text-align: center; */
+  text-align: center;
   color: #434455;
 }
 
@@ -334,10 +337,11 @@ header .container {
 .footer .container {
   display: flex;
   flex-direction: column;
-  padding: 100px 0 100px;
+  padding: 100px 0;
 }
 
 .footer-logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -345,11 +349,11 @@ header .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
   margin-bottom: 16px
 }
 
 .footer-span {
+  display: inline-block;
   color: #f4f4fd;
 }
 
