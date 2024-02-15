@@ -9,6 +9,7 @@ body {
 ul {
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
 }
 
 a {
@@ -40,8 +41,9 @@ button {
   display: block;
   cursor: pointer;
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
+  border: none;
 }
 
 .container {
@@ -62,12 +64,15 @@ header .container {
   align-items: center;
 }
 
-.site-header {}
+.site-header {
+  border-bottom: 1px solid #e7e9fc;
+  margin-bottom: 21px;
+}
 
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 76px;
+  /* gap: 76px; */
 }
 
 .logo {
@@ -78,6 +83,7 @@ header .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo span {
@@ -87,6 +93,7 @@ header .container {
 .nav-list {
   display: flex;
   gap: 40px;
+  margin: 0;
 }
 
 .nav-item {
@@ -140,6 +147,7 @@ header .container {
 
 .hero {
   background: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -148,8 +156,9 @@ header .container {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-top: 188px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
+  /* margin-bottom: 48px; */
+  max-width: 496px;
 }
 
 
@@ -171,6 +180,17 @@ header .container {
 .studio {}
 
 .studio-title {}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 .studio-list {
   display: flex;
@@ -235,7 +255,6 @@ header .container {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -245,7 +264,13 @@ header .container {
   letter-spacing: 0.02em;
   /* text-align: center; */
   color: #434455;
-  margin-bottom: 32px;
+}
+
+.team-item-box {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0 32px;
+  align-items: center;
 }
 
 .portfolio {}
@@ -280,12 +305,12 @@ header .container {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-item-info {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -308,15 +333,8 @@ header .container {
 
 .footer .container {
   display: flex;
-}
-
-.footer-wrap-logo {
-  display: flex;
   flex-direction: column;
-  width: 264px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  gap: 16px;
+  padding: 100px 0 100px;
 }
 
 .footer-logo {
@@ -327,6 +345,8 @@ header .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px
 }
 
 .footer-span {
@@ -339,4 +359,5 @@ header .container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
