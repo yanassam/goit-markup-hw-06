@@ -332,11 +332,6 @@ header .container {
 
 .footer {
   background: #2e2f42;
-}
-
-.footer .container {
-  display: flex;
-  flex-direction: column;
   padding: 100px 0;
 }
 
