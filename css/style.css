@@ -146,8 +146,13 @@ header .container {
 .main-content {}
 
 .hero {
-  background: #2e2f42;
   padding: 188px 0;
+  background: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -188,7 +193,6 @@ header .container {
   margin: -1px;
   padding: 0;
   border: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -205,13 +209,27 @@ header .container {
   width: 264px;
 }
 
+.studio-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background: #f4f4fd;
+  padding: 24px;
+}
+
+.studio-icon-svg {
+  align-items: center;
+}
+
 .studio-sub-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
+  margin: 8px 0;
 }
 
 .studio-text {
@@ -276,6 +294,11 @@ header .container {
   align-items: center;
 }
 
+.team-item-box .social-media {
+  margin-top: 8px;
+  gap: 24px;
+}
+
 .portfolio {}
 
 .portfolio-title {
@@ -330,9 +353,18 @@ header .container {
 
 .portfolio-img {}
 
+/* footer  */
 .footer {
   background: #2e2f42;
   padding: 100px 0;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer-goal {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -359,4 +391,41 @@ header .container {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-social {
+  max-width: 264px;
+}
+
+.media-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404bbf;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.media-item-svg {
+  fill: #FFFFFF;
+}
+
+.media-item-link:hover,
+.media-item-link:focus {
+  background-color: #31d0aa;
+}
+
+.social-media {
+  display: flex;
+  gap: 16px;
 }
