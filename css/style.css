@@ -263,7 +263,7 @@ header .container {
   background: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
   border-radius: 0 0 4px 4px;
@@ -290,13 +290,12 @@ header .container {
 .team-item-box {
   display: flex;
   flex-direction: column;
-  padding: 32px 0 32px;
-  align-items: center;
+  padding: 32px 16px;
 }
 
 .team-item-box .social-media {
   margin-top: 8px;
-  gap: 24px;
+  justify-content: space-between;
 }
 
 .portfolio {}
@@ -403,7 +402,7 @@ header .container {
 }
 
 .footer-social {
-  max-width: 264px;
+  width: 208px;
 }
 
 .media-item-link {
@@ -427,5 +426,5 @@ header .container {
 
 .social-media {
   display: flex;
-  gap: 16px;
+  justify-content: space-between;
 }
