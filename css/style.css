@@ -610,6 +610,7 @@ header .container {
 }
 
 .modal-close-btn {
+  border: 1px solid #e7e9fc;
   border-radius: 100%;
   min-width: 24px;
   height: 24px;
@@ -624,6 +625,7 @@ header .container {
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
+  border: none;
   background-color: #404bbf;
 }
 
@@ -666,6 +668,10 @@ header .container {
   margin-bottom: 8px;
 }
 
+.modal-form-feald {
+  margin-bottom: 8px;
+}
+
 .modal-input-info {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -675,6 +681,7 @@ header .container {
   outline: 0px solid transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 11px 38px;
+  color: #8e8f99;
 }
 
 .modal-svg {
@@ -726,10 +733,14 @@ header .container {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 100%;
-
   background-color: transparent;
   outline: 0px solid transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #8e8f99;
+}
+
+.modal-form-textarea {
+  margin-bottom: 16px;
 }
 
 .modal-textarea:focus {
@@ -751,6 +762,36 @@ header .container {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 24px;
 }
 
-.agreement-checkbox-icon {}
+.agreement-checkbox-icon {
+  fill: #fff;
+}
+
+.checkbox-style {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agreement-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  text-decoration: underline;
+}
+
+
+.agreement-checkbox:checked+.modal-form-agreement .checkbox-style {
+  background-color: #404bbf;
+  border: none;
+}
